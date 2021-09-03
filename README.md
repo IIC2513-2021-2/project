@@ -5,6 +5,7 @@
 Bienvenidos al repositorio **para el proyecto de ambas secciones** del curso IIC2513 Tecnologías y Aplicaciones Web del DCC UC, en el período 2021-2. Acá podrás encontrar los enunciados y toda la información relacionada al proyecto del curso. También encontrarás el foro para plantear dudas y consultas, como se describe a continuación.
 
 ## Tabla de contenidos
+- [Enunciados](#enunciados)
 - [Knowledge base (Wiki)](#knowledge-base-wiki)
   - [Getting Started](#getting-started)
   - [Comenzando el desarrollo](#comenzando-el-desarrollo)
@@ -13,6 +14,10 @@ Bienvenidos al repositorio **para el proyecto de ambas secciones** del curso IIC
   - [Etiquetas](#etiquetas)
   - [Procedimiento](#procedimiento)
   - [Watch](#watch)
+
+## Enunciados
+
+Los diferentes enunciados asociados al proyecto los pueden encontrar en [esta sección](enunciados).
 
 ## Knowledge base (Wiki)
 
