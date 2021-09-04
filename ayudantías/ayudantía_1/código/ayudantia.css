@@ -1,0 +1,157 @@
+/* https://coolors.co/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0 */
+/* https://thesecatsdonotexist.com/ */
+/* https://fontawesome.com/v4.7/ */
+/* https://htmlcolorcodes.com/color-picker/ */
+
+/* GENERAL */
+body {
+    margin: 0;
+    background-color: #66D8CD;
+    font-family: 'Staatliches', cursive;
+    color: white;
+}
+
+/* NAVBAR */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: #480CA8;
+    /*background-color: hsl(263, 93%, 35%, 0.5);*/
+    width: 100%;
+    border: 0px;
+
+    /* explicar lo de la posicion con esto */
+    position: sticky;
+}
+
+li {
+    float: left; 
+}
+
+#derecha {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* LINKS NAVBAR */
+li a:hover {
+    background-color: #F72585;
+}
+
+li a:focus {
+    background-color: #7209B7;
+}
+
+li a:active {
+    background-color: #B5179E;
+}
+
+/* BOX REGISTRO */
+
+.registro-box {
+    /* margin */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 450px;
+    margin-right: 450px;
+    
+    /* padding */
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    /* align */
+    text-align: center;
+    align-items: center;
+    
+    /*border*/
+    border-radius: 5px;
+    border: 5px solid #7209B7;
+
+    /* background */
+    background-color: #F72585;
+}
+
+p {
+    font-family: 'Alumni Sans', sans-serif;
+    font-size: 20px;
+}
+
+/* FORMULARIO */
+form {
+    text-align: center;
+}
+
+input {
+    width: 50%;
+    padding: 5px 15px;
+    margin: 0px 0;
+    border: 2px solid #66D8CD;
+    border-radius: 5px;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+.form-submit{
+    width: 25%;
+    padding: 5px 15px;
+    margin: 0px 0;
+    border-radius: 5px;
+    
+    font-family: 'Staatliches', cursive;
+    color: #7209B7;
+    
+    background-color: #66D8CD;
+}
+
+/* SUBMIT FORMULARIO */
+.form-submit:hover{
+    color: #66D8CD;
+    background-color: #7209B7;
+}
+
+.form-submit:active{
+    color: #7209B7;
+    background-color: #66D8CD;
+}
+
+/* FEED */
+.feed {
+    /* margin */
+    /* top right bottom left */
+    margin: 50px 20% 50px 20%;
+    
+    /* padding */
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* align */
+    align-items: center;
+    text-align: center;
+
+    background-color: #F72585;
+
+    border-radius: 5px;
+}
+
+#h-feed {
+    border: 5px solid #7209B7;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* IMAGEN */
+img {
+    width: 50%;
+    height: 50%;
+}
