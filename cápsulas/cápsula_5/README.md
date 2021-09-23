@@ -102,3 +102,7 @@ o accediendo desde la plataforma de Heroku.
 
 - Para la instalación y manejo de los paquetes ocupar yarn
 - Ignorar archivos grandes e innecesarios como los node_modules
+
+## Referencias 
+
+[Documentación de Heroku](https://devcenter.heroku.com/)
