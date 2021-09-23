@@ -17,9 +17,7 @@ Además, controla la base de datos, seguridad, orquestación, balanceadores de c
 
 ### Heroku Postgres 
  
- En Heroku pordemos agregar imagen de Postgres de forma fácil con un Add-on.
-
- Al agregar este Add-On inmmediatamente se seta una variable de entorno. 
+ En Heroku pordemos agregar imagen de Postgres de forma fácil con un Add-on. Al agregar este Add-On inmmediatamente se setea una variable de entorno. 
 
  ### Opciones de Deploy 
 
