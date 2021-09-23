@@ -38,7 +38,7 @@ heroku --version
 
 En esta cápsula, este paso se desarrolla desde la plataforma de Heroku. Sin embargo, también se puede hacer desde la consola (ver [documentación oficial](https://devcenter.heroku.com/articles/getting-started-with-nodejs#prepare-the-app)).
 
-Teniendo una cuenta en Heroku, y habiendo ingresado sesión, se accede al [dashboard](https://dashboard.heroku.com/apps). 
+Teniendo una cuenta en Heroku, y habiendo iniciado sesión, se accede al [dashboard](https://dashboard.heroku.com/apps). 
 
 Se debe seleccionar _New_>_Create New App_, y luego completar el formulario de información de nuestra aplicación, a la que llamaremos en esta cápsula       ejemplo-heroku-deploy. 
 
