@@ -81,7 +81,7 @@ Los siguientes comandos que ejecutaremos serán los mismos que usamos cuando que
 ```bash
 git add .
 git commit -am "deploy"
-git push heroku master
+git push heroku main
 ```
 
 Esto se demorará unos segundos. Una vez finalizado se puede revisar el detalle de la ejecución con:
