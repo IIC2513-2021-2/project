@@ -23,7 +23,7 @@ Además, controla la base de datos, seguridad, orquestación, balanceadores de c
 
  Hay 3 distintas opciones para hacer el deploy: Container Registry, GitHub y Heroku Git. En el ejemplo de esta cápsula se usará la última opción. De esta forma usaremos [Heroku CLI](https://devcenter.heroku.com/categories/command-line) para acceder al directorio donde tenemos el proyecto al que se le hará Deploy. 
 
-## Manual de _deploy_
+## Manual de _Deploy_
 
 ### Paso Número 1: Instalar Heroku CLI
 
