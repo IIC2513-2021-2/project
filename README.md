@@ -33,7 +33,7 @@ En la sección [Comenzando el desarrollo](../../wiki/Comenzando-el-desarrollo) e
 
 ## Cápsulas complementarias
 
-El código asociado a cada cápsula complementaria lo pueden encontrar en [esta sección](capsulas).
+El código asociado a cada cápsula complementaria lo pueden encontrar en [esta sección](cápsulas).
 
 ## Dudas
 
