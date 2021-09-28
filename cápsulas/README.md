@@ -9,4 +9,4 @@
 | Deploy a Heroku | [Video](https://drive.google.com/file/d/1sOunfKmzyBwNkda45eAWxLy1a2WTxRtC/view?usp=sharing) | [Código](./cápsula_5) | [Heroku](https://devcenter.heroku.com/)|
 | Manejo de assets | [Video](https://drive.google.com/file/d/11iLY0tONvC5igEhujWV-dtcxOjVjKDoa/view?usp=sharing) | | [Sass](https://sass-lang.com/guide), [Webpack](https://webpack.js.org/)|
 | Validación de recursos | [Video](https://drive.google.com/file/d/11iUKVAgeXLtod7F2tSmxdNqin75tqpub/view?usp=sharing) | [Código](./cápsula_7)| [sequelize manual](https://sequelize.org/master/manual/validations-and-constraints.html)|
-| Creación de recurso con asociación | [Video](https://drive.google.com/file/d/1_sIFatmt5mbFsQkcZQwNKQwAo57rRR-2/view?usp=sharing) | [sequelize manual](https://sequelize.org/master/manual/assocs.html#special-methods-mixins-added-to-instances)|
+| Creación de recurso con asociación | [Video](https://drive.google.com/file/d/1_sIFatmt5mbFsQkcZQwNKQwAo57rRR-2/view?usp=sharing) | [Código](./cápsula_8)| [sequelize manual](https://sequelize.org/master/manual/assocs.html#special-methods-mixins-added-to-instances)|
