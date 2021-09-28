@@ -7,3 +7,4 @@
 | Variables de entorno | [Video](https://drive.google.com/file/d/1_0A99H8FML68gLKSRhMPyLRiUb0iUDBm/view?usp=sharing) | [Código](./cápsula_3) | [dotenv](https://www.npmjs.com/package/dotenv), [direnv](https://direnv.net/) |
 | Introducción al template | [Video](https://drive.google.com/file/d/1gWmIK0MJz624SOWCv7_yMyu5NIXF2l1U/view?usp=sharing) | [Código](./cápsula_4) | [generator template](https://github.com/IIC2513/generator-template), [yarn](https://yarnpkg.com/), [yeoman](https://yeoman.io/) |
 | Deploy a Heroku | [Video](https://drive.google.com/file/d/1sOunfKmzyBwNkda45eAWxLy1a2WTxRtC/view?usp=sharing) | [Código](./cápsula_5) | [Heroku](https://devcenter.heroku.com/)|
+| Manejo de assets | [Video](https://drive.google.com/file/d/11iLY0tONvC5igEhujWV-dtcxOjVjKDoa/view?usp=sharing) | | [Sass](https://sass-lang.com/guide), [Webpack](https://webpack.js.org/)|
