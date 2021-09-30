@@ -10,3 +10,4 @@
 |  6 |Manejo de assets | [Video](https://drive.google.com/file/d/11iLY0tONvC5igEhujWV-dtcxOjVjKDoa/view?usp=sharing) | | [Sass](https://sass-lang.com/guide), [Webpack](https://webpack.js.org/)|
 |  7 |Validación de recursos | [Video](https://drive.google.com/file/d/11iUKVAgeXLtod7F2tSmxdNqin75tqpub/view?usp=sharing) | [Código](./cápsula_7)| [sequelize manual](https://sequelize.org/master/manual/validations-and-constraints.html)|
 |  8 |Creación de recurso con asociación | [Video](https://drive.google.com/file/d/1_sIFatmt5mbFsQkcZQwNKQwAo57rRR-2/view?usp=sharing) | [Código](./cápsula_8)| [sequelize manual](https://sequelize.org/master/manual/assocs.html#special-methods-mixins-added-to-instances)|
+|  9 |Queries en asociaciones | [Video](https://drive.google.com/file/d/1eyy3YxgdPYrcFcdNgh47cUD8euBJyvOl/view?usp=sharing) | [Código](./cápsula_9)| [sequelize manual](https://sequelize.org/master/manual/assocs.html)|
