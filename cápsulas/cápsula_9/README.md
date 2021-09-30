@@ -5,7 +5,7 @@ Por Pedro Herrera (pedro.herrera@uc.cl)
 
 ### Video
 
-La cápsula contempla un video, en el siguiente [enlace](https://drive.google.com/file/d/1eyy3YxgdPYrcFcdNgh47cUD8euBJyvOl/view?usp=sharing) en donde se presenta como realizar queries en asociaciones mediante lazy y eager loading.
+La cápsula contempla un video, en el siguiente [enlace](https://drive.google.com/file/d/1-rnPjxFXEikKy7cZctRErzBriSjNSjTK/view?usp=sharing) en donde se presenta como realizar queries en asociaciones mediante lazy y eager loading.
 ## ¿Qué veremos?
 
 En la cápsula partimos hablando sobre la asociación entre `albums` y `artists` y de cómo realizar un lazy loading cuando el modelo es de tipo `has_many` como también cuando es del tipo `belongs_to`. Luego se habla sobre eager loading, y un ejemplo de este de como puede mejorar la perfomance de una aplicación que tenga el caso de n + 1 queries. 
