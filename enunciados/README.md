@@ -1,6 +1,8 @@
 # Enunciados proyecto
 
-El enunciado general de la primera parte del proyecto lo pueden [encontrar aquí](https://github.com/IIC2513-2021-2/project/blob/main/enunciados/Enunciado_Proyecto_Parte1.pdf).
+El enunciado general de la **primera parte del proyecto** lo pueden [encontrar aquí](https://github.com/IIC2513-2021-2/project/blob/main/enunciados/Enunciado_Proyecto_Parte1.pdf).
+
+El enunciado general de la **segunda parte del proyecto**lo pueden [encontrar aquí](https://github.com/IIC2513-2021-2/project/blob/main/enunciados/Enunciado_Proyecto_Parte2.pdf).
 
 Además, existen 5 ideas de proyecto para este semestre. El detalle de la idea que le fue asignada a cada grupo se encuentra referenciada a continuación:
 
