@@ -2,16 +2,16 @@
 
 ### Versión 1.0
 
-Por **Gonzalo Concha** y **Kelsey Franken**
+Por **Gonzalo Concha** (gonzalo.concha@uc.cl) y **Kelsey Franken** (kcfranken@uc.cl)
 
 ### Video
 La cápsula contempla un video, en el siguiente [enlace](https://drive.google.com/file/d/1Wor427noXQ90w4blVWWWJMXD9vsi_2uT/view?usp=sharing) en donde se presenta cómo hacer la autentificación del usuario utilizando json web token (JWT). 
 
 ## ¿Qué veremos? 
 
-JWT es un estándar para la generación y el intercambio de tokens entre 2 partes
+JWT es un estándar para la generación y el intercambio de tokens entre 2 partes.
 El JWT propiamente tal, es una cadena de texto con puntos que dividen sus 3 partes: el header, el payload y la firma.
-La firma se hace codificando el header y el payload  usando una codificación base64Url y una “clave secreta”, que se guardará en el servidor, específicamente en las variables de entorno. 
+La firma se hace codificando el header y el payload, usando una codificación base64Url y una “clave secreta”, que se guardará en el servidor, específicamente en las variables de entorno. 
 
 En esta cápsula, en primer lugar, se verá como generar y almacenar la clave secreta. En segundo lugar, se hablará de la generación del token y su intercambio para la realización de la autentificación. Por último, se mostrará como usar distintos middlewares para la protección de rutas y definión del current user.  
 
@@ -27,14 +27,14 @@ yarn add jsonwebtoken koa-jwt
 
 ## Clave secreta 
 
-Para crear la clave secreta debemos ingresar a node. En la consola ejecutar 
+Para crear la clave secreta debemos ingresar a node. En la consola debes ejecutar 
 ```bash
 node
 ```
 Luego, usaremos una librería que nos permitirá crear nuestra clave secreta. Ejecutar en consola
 
 ```bash
-require('crypto').randomBytes(32).toString('hex)
+require('crypto').randomBytes(32).toString('hex')
 ```
 Esto nos entregará un string con nuestra clave que debemos guardar en nuestras variables de entorno con el nombre JWT_SECRET. 
 
@@ -165,7 +165,7 @@ router.post('api.auth.login', '/', async (ctx) => {
 ```
 Los campos que le estamos entregando (acces_token y token_type) vienen de la [especificación asociada a los access token](https://datatracker.ietf.org/doc/html/rfc6749#section-5.1), específicamente a cuando la response es exitosa. 
 
-Agregamos ahora la ruta en el index. Primero, importamos el archivo.
+Agregamos ahora la ruta en api/index. Primero, importamos el archivo.
 ``` javascript
 const auth = require('./auth');
 ```
@@ -176,13 +176,13 @@ router.use('/auth', auth.routes());
 ## Protección de rutas 
 Utilizaremos librería de koa-jwt y la propiedad de los middlewares de ser ejecutados en orden para proteger ciertas rutas.  
 
-Primero, vamos a añadir al index.js las variables de entorno (para acceder a nuestro secreto) y la librería de jwt que tiene el middleware que necesitamos. 
+Primero, vamos a añadir a api/index las variables de entorno (para acceder a nuestro secreto) y la librería de jwt que tiene el middleware que necesitamos. 
 
 ``` javascript
 require('dotenv').config();
 const jwt = require('koa-jwt');
 ```
-Vamos a agregar el middleware. Este recibe el secreto y una key, la cuál cargará el contenido, osea el payload, del token al state. Esta key permite que el payload quede en ctx.state.authData y no es ctx.state.user. Sin esta especificación tendremos problemas si es que  queremos usar ctx.state.user.
+Vamos a agregar el middleware. Este recibe el secreto y una key, la cuál cargará el contenido, osea el payload, del token al state. Esta key permite que el payload quede en ctx.state.authData y no es ctx.state.user. Sin esta especificación, tendremos problemas si es que  queremos usar ctx.state.user.
 
 ``` javascript
 /* Unprotected routes */
@@ -219,7 +219,7 @@ function apiSetCurrentUser(ctx, next) {
 }
 ``` 
 
-En index.js vamos a importar el middleware 
+En api/index vamos a importar el middleware 
 
 ``` javascript
 const { apiSetCurrentUser } = require('../../middlewares/auth');
@@ -232,14 +232,14 @@ router.use(apiSetCurrentUser);
 ``` 
 Hay otras opciones para proteger las rutas, las cuáles no son excluyentes entre sí.
 
-Usando este ejemplo en particular, se puede dejar los middlewares dentro de artists.js antes de la ruta que queremos proteger. 
+Usando este ejemplo en particular, se puede dejar ambos middlewares dentro de artists.js antes de la ruta que queremos proteger. 
 
 Otra opción es usar el paquete (koa-unless)[https://github.com/Foxandxss/koa-unless] (de koa-jwt) que nos permite ignorar un middleware cuando se cumple cierta condición 
 
 ``` javascript
 router.use(jwt({ secret: process.env.JWT_SECRET, key: 'authData' }).unless({ method: 'GET' }));
 ``` 
-Además, si queremos no proteger las rutas, pero si definir el current user, solo hay que definir como true el parámetro passtrough
+Además, si no queremos proteger las rutas, pero si definir el current user, solo hay que definir como true el parámetro passtrough
 ``` javascript
 router.use(jwt({secret: process.env.JWT_SECRET, key:'authData', passtrough:true}))
 ``` 
