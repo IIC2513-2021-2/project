@@ -1,0 +1,103 @@
+body {
+    margin: 0 auto;
+    width: 800px;
+    display: inline;
+    padding: 10px;
+    background-color: #DBDBDB;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    width: 880px;
+    border-bottom: none;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.albums-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 15px;
+    width: 900px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.album-card {
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+    padding: 5px;
+}
+
+.album-card:hover {
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+    transition: all 0.4s ease 0s;
+}
+
+.album-card .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+.album-card h3, p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.album-card img {
+    padding: 0%;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: fit-content;
+    border-top-right-radius: 15px;
+}
+
+.wishlist-section {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    width: 900px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wishlist-card {
+    background-color: white;
+    border-radius: 15px;
+    transition: all 0.4s ease 0s;
+    padding: 5px;
+}
+
+.wishlist-card:hover {
+    -webkit-box-shadow: 2px 2px 5px #999;
+    -moz-box-shadow: 2px 2px 5px #999;
+    filter: shadow(color=#999999, direction=135, strength=2);
+    transition: all 0.4s ease 0s;
+}
+
+.wishlist-card .btn-remove {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+}
+
+.wishlist-card h3, p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}

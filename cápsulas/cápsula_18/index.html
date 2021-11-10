@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Wishlist</title>
 </head>
 <body>
     <div class="container">
         <h1>Soundify Wishlist!</h1>
-        <p>Selecciona tus álbumes favoritos</p>
+        <h2>Selecciona tus álbumes favoritos</h2>
         <div class="albums-section" id="albums-content"></div>
-
+        <h2>Álbumes favoritos</h2>
         <div class="wishlist-section" id="wishlist-content">
-            <h2>Álbumes favoritos</h2>
         </div>
     </div>
     <template id="template-album">
         <div class="album-card">
             <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/disc-vinyl-icon.png" width="150" height="150"/>
+            <button class="btn">❤</button>
             <h3>Name</h3>
             <p>Artist</p>
-            <button class="btn">❤</button>
         </div>
     </template>
     <template id="template-wishlist">
