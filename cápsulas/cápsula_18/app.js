@@ -28,7 +28,7 @@ const getAlbums = async () => {
     albums.forEach(album => {
       templateAlbum.querySelector('h3').textContent = album.name
       templateAlbum.querySelector('p').textContent = album.artist
-      templateAlbum.querySelector('.btn').dataset.id = album.id
+      templateAlbum.querySelector('.btn-add').dataset.id = album.id
 
       const clone = templateAlbum.cloneNode(true)
       fragment.appendChild(clone)
@@ -40,7 +40,7 @@ const getAlbums = async () => {
 }
 
 const addToWishList = (event) => {
-  if (event.target.classList.contains('btn')){
+  if (event.target.classList.contains('btn-add')){
     setWishlist(event.target.parentElement)
   }
   event.stopPropagation()
@@ -48,7 +48,7 @@ const addToWishList = (event) => {
 
 const setWishlist = (element) => {
   const album = {
-    id: element.querySelector('.btn').dataset.id,
+    id: element.querySelector('.btn-add').dataset.id,
     name: element.querySelector('h3').textContent,
     artist: element.querySelector('p').textContent
   }

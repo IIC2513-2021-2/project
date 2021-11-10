@@ -39,7 +39,7 @@ h1, h2 {
     transition: all 0.4s ease 0s;
 }
 
-.album-card .btn {
+.album-card .btn-add {
     display: block;
     margin-left: auto;
     margin-right: auto;
