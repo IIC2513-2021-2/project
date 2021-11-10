@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Soundify Wishlist!</h1>
+        <p>Selecciona tus álbumes favoritos</p>
+        <div class="albums-section" id="albums-content"></div>
+
+        <div class="wishlist-section" id="wishlist-content">
+            <h2>Álbumes favoritos</h2>
+        </div>
+    </div>
+    <template id="template-album">
+        <div class="album-card">
+            <img src="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/disc-vinyl-icon.png" width="150" height="150"/>
+            <h3>Name</h3>
+            <p>Artist</p>
+            <button class="btn">❤</button>
+        </div>
+    </template>
+    <template id="template-wishlist">
+        <div class="wishlist-card">
+            <p class="album-name">El último tour del mundo</p>
+            <p> - </p>
+            <p class="artist-name">Bad Bunny</p>
+            <button class="btn-remove">🗑 Eliminar</button>
+        </div>
+    </template>
+    <script src="app.js"></script>
+</body>
+</html>
