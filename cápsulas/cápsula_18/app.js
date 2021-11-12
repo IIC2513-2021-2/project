@@ -3,34 +3,42 @@ const templateAlbum = document.getElementById('template-album').content
 const wishlistContent = document.getElementById('wishlist-content')
 const templateWishlist = document.getElementById('template-wishlist').content
 
-const fragment = document.createDocumentFragment()
+const fragment = document.createDocumentFragment();
 
 let wishList = {}
 
 albumsContent.addEventListener('click', event => {
-  addToWishList(event)
+  addToWishList(event);
 })
 
 wishlistContent.addEventListener('click', event => {
-  removeAlbum(event)
-})
+  removeAlbum(event);
+});
 
 //Cuando se carga el documento llama a getAlbums
 document.addEventListener('DOMContentLoaded', () => {
-  getAlbums()
+  getAlbums();
 })
+
+/*
+const albumCardButtons = document.getElementsByClassName("btn-add")
+for(var i=0; i< albumCardButtons.length; i++) {
+  var currentButton = albumCardButtons[i]
+  currentButton.addEventListener('click', event => {
+    addToWishList(event);
+  })
+})
+*/
 
 const getAlbums = async () => {
   try {
-    const res = await fetch('albums.json')
-    const albums = await res.json()
-    console.log(albums)
+    const res = await fetch('albums.json');
+    const albums = await res.json();
     albums.forEach(album => {
-      templateAlbum.querySelector('h3').textContent = album.name
-      templateAlbum.querySelector('p').textContent = album.artist
-      templateAlbum.querySelector('.btn-add').dataset.id = album.id
-
       const clone = templateAlbum.cloneNode(true)
+      clone.querySelector('h3').textContent = album.name
+      clone.querySelector('p').textContent = album.artist
+      clone.querySelector('.btn-add').dataset.id = album.id
       fragment.appendChild(clone)
     })
     albumsContent.appendChild(fragment)
@@ -52,20 +60,17 @@ const setWishlist = (element) => {
     name: element.querySelector('h3').textContent,
     artist: element.querySelector('p').textContent
   }
-  console.log(album)
   wishList[album.id] = {...album}
-  console.log(wishList)
-  getWishlist()
+  refreshWishlist()
 }
 
-const getWishlist = () => {
+const refreshWishlist = () => {
   wishlistContent.innerHTML = ''
   Object.values(wishList).forEach((album) => {
-    templateWishlist.querySelector('.album-name').textContent = album.name
-    templateWishlist.querySelector('.artist-name').textContent = album.artist
-    //templateWishlist.querySelectorAll('p')[2].textContent = album.artist
-    templateWishlist.querySelector('.btn-remove').dataset.id = album.id
     const clone = templateWishlist.cloneNode(true)
+    clone.querySelector('.album-name').textContent = album.name
+    clone.querySelector('.artist-name').textContent = album.artist
+    clone.querySelector('.btn-remove').dataset.id = album.id
     fragment.appendChild(clone)
   })
   wishlistContent.appendChild(fragment)
@@ -74,7 +79,7 @@ const getWishlist = () => {
 const removeAlbum = (event) => {
   if (event.target.classList.contains('btn-remove')){
     delete wishList[event.target.dataset.id]
-    getWishlist()
+    refreshWishlist()
   }
 
   event.stopPropagation()
