@@ -7,27 +7,9 @@ const fragment = document.createDocumentFragment();
 
 let wishList = {};
 
-albumsContent.addEventListener('click', event => {
-  addToWishList(event);
-})
-
-wishlistContent.addEventListener('click', event => {
-  removeAlbum(event);
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   getAlbums();
 })
-
-/*
-const albumCardButtons = document.getElementsByClassName("btn-add")
-for(var i=0; i< albumCardButtons.length; i++) {
-  var currentButton = albumCardButtons[i]
-  currentButton.addEventListener('click', event => {
-    addToWishList(event);
-  })
-})
-*/
 
 const getAlbums = async () => {
   try {
@@ -35,9 +17,11 @@ const getAlbums = async () => {
     const albums = await res.json();
     albums.forEach(album => {
       const clone = templateAlbum.cloneNode(true);
+      const cloneBtnAdd = clone.querySelector('.btn-add');
       clone.querySelector('h3').textContent = album.name;
       clone.querySelector('p').textContent = album.artist;
-      clone.querySelector('.btn-add').dataset.id = album.id;
+      cloneBtnAdd.dataset.id = album.id;
+      cloneBtnAdd.addEventListener('click', addToWishList);
       fragment.appendChild(clone);
     })
     albumsContent.appendChild(fragment);
@@ -47,10 +31,7 @@ const getAlbums = async () => {
 }
 
 const addToWishList = (event) => {
-  if (event.target.classList.contains('btn-add')){
-    setWishlist(event.target.parentElement);
-  }
-  event.stopPropagation();
+  setWishlist(event.target.parentElement);
 }
 
 const setWishlist = (element) => {
@@ -67,19 +48,17 @@ const refreshWishlist = () => {
   wishlistContent.innerHTML = ''
   Object.values(wishList).forEach((album) => {
     const clone = templateWishlist.cloneNode(true);
+    const cloneBtnRemove = clone.querySelector('.btn-remove');
     clone.querySelector('.album-name').textContent = album.name;
     clone.querySelector('.artist-name').textContent = album.artist;
-    clone.querySelector('.btn-remove').dataset.id = album.id;
+    cloneBtnRemove.dataset.id = album.id;
+    cloneBtnRemove.addEventListener('click', removeAlbum);
     fragment.appendChild(clone);
   })
   wishlistContent.appendChild(fragment);
 }
 
 const removeAlbum = (event) => {
-  if (event.target.classList.contains('btn-remove')){
-    delete wishList[event.target.dataset.id];
-    refreshWishlist();
-  }
-
-  event.stopPropagation();
+  delete wishList[event.target.dataset.id];
+  refreshWishlist();
 }
