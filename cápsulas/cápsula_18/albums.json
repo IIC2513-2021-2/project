@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "name": "SOUR",
+    "artist": "OLIVIA RODRIGO"
+  },
+  {
+    "id": 2,
+    "name": "FUTURE NOSTALGIA",
+    "artist": "DUA LIPA"
+  },
+  {
+    "id": 3,
+    "name": "GREATEST HITS",
+    "artist": "QUEEN"
+  },
+  {
+    "id": 4,
+    "name": "WE'RE ALL ALONE IN THIS TOGETHER",
+    "artist": "DAVE"
+  },
+  {
+    "id": 5,
+    "name": "DIVIDE",
+    "artist": "ED SHEERAN"
+  },
+  {
+    "id": 6,
+    "name": "50 YEARS - DON'T STOP",
+    "artist": "FLEETWOOD MAC"
+  },
+  {
+    "id": 7,
+    "name": "THE HIGHLIGHTS",
+    "artist": "WEEKND"
+  },
+  {
+    "id": 8,
+    "name": "FINE LINE",
+    "artist": "HARRY STYLES"
+  },
+  {
+    "id": 9,
+    "name": "DIAMONDS",
+    "artist": "ELTON JOHN"
+  },
+  {
+    "id": 10,
+    "name": "SHOOT FOR THE STARS AIM FOR THE MOON",
+    "artist": "POP SMOKE"
+  },
+  {
+    "id": 11,
+    "name": "DIVINELY UNINSPIRED TO A HELLISH EXTENT",
+    "artist": "LEWIS CAPALDI"
+  },
+  {
+    "id": 12,
+    "name": "GOLD - GREATEST HITS",
+    "artist": "ABBA"
+  },
+  {
+    "id": 13,
+    "name": "THE GREATEST SHOWMAN",
+    "artist": "MOTION PICTURE CAST RECORDING"
+  },
+  {
+    "id": 14,
+    "name": "LIFE BY MISADVENTURE",
+    "artist": "RAG'N'BONE MAN"
+  },
+  {
+    "id": 15,
+    "name": "50 YEARS - DON'T STOP",
+    "artist": "FLEETWOOD MAC"
+  },
+  {
+    "id": 16,
+    "name": "JUSTICE",
+    "artist": "JUSTIN BIEBER"
+  },
+  {
+    "id": 17,
+    "name": "EVERMORE",
+    "artist": "TAYLOR SWIFT"
+  },
+  {
+    "id": 18,
+    "name": "TIME FLIES - 1994-2009",
+    "artist": "OASIS"
+  },
+  {
+    "id": 19,
+    "name": "CURTAIN CALL - THE HITS",
+    "artist": "EMINEM"
+  },
+  {
+    "id": 20,
+    "name": "F**K LOVE",
+    "artist": "KID LAROI"
+  }
+]
