@@ -25,20 +25,21 @@ npm init react-app <nombre-app>
 ```
 Como durante el semestre hemos usado `yarn`, para mantener la consistencia, sugerimos utilizar este comando para utilizar esta herramienta.
   
-### Correr la App
+## Correr la App
 Para correr la app en local, debes ubicarte en la carpeta que acabamos de crear y correr:
 ```
 yarn start
 ```
 Esto corre la app en modo desarrollador en http://localhost:3000 por default.
 
-### Añadir Estilos SASS
+## Añadir Estilos SASS
 Para poder utilizar este preprocesador de CSS en nuestra app, debemos añadir el siguietne módulo:
 ```
 yarn add node-sass@4.14.1
 ```
 
-### Breve Explicación de la App Base
+## Breve Explicación de la App Base
+#### App.js
 ```
 src > App.js
 ```
@@ -72,6 +73,7 @@ Aquí encontraremos un **componente** llamado App, que contiene el html principa
 
 ```
 Este componente se renderiza en `index.js`
+#### index.js
 ```
 src > index.js
 ```
@@ -93,7 +95,7 @@ Aquí podemos encontrar el Render de DOM y cómo este rederiza nuestra component
   reportWebVitals();
 
 ```
-
+#### index.hmtl
 ```
 public > index.html
 ```
@@ -114,7 +116,7 @@ Este es el html principal de la app, aquí podemos encontrar el elemento html co
       <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
       <!--
         manifest.json provides metadata used when your web app is installed on a
-        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+        users mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
       -->
       <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       <!--
