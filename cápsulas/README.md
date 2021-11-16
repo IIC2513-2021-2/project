@@ -20,3 +20,4 @@
 | 16 | Testing II | [Video](https://drive.google.com/file/d/1HiSbiWfchn56n-TUNeE2H4P9cteAz48d/view?usp=sharing)| [PR de ejemplo](https://github.com/IIC2513-2021-2/soundify/pull/21)|  |
 | 17 | Envío de correos | [Video](https://drive.google.com/file/d/1W89VOipQf8OB6QGGifdqOy0GpGVHqs2w/view?usp=sharing)| [PR de ejemplo](https://github.com/IIC2513-2021-2/soundify/pull/19)| [Sendgrid](https://sendgrid.com/) |
 | 18 | JS DOM | [Video](https://drive.google.com/file/d/1ISTbL4ecCTTz9NyFT2wtkuzsa5bWlbiG/view?usp=sharing) | [Código](./cápsula_18), [PR de ejemplo](https://github.com/IIC2513-2021-2/project/pull/48) | [DOM](https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction), [DocumentFragment](https://developer.mozilla.org/es/docs/Web/API/DocumentFragment), [Tag template](https://www.w3schools.com/tags/tag_template.asp)
+
