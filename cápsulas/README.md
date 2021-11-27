@@ -29,6 +29,7 @@
 | 25 | Context y manejo de sesión |  [Video](https://drive.google.com/file/d/1h5zFjIXB3AToS9E6vFV4DkJUBQVE6VoF/view?usp=sharing) | [PR de ejemplo](https://github.com/IIC2513-2021-2/soundify-front/pull/7)| [ReactHooks](https://reactjs.org/docs/hooks-reference.html), [Context](https://reactjs.org/docs/context.html)|
 | 26 | Formularios en React con Formik |  [Video](https://drive.google.com/file/d/1hBUKcT0E7E8vp2lNucH44Q4bsqCdRYnw/view?usp=sharing) | [PR de ejemplo](https://github.com/IIC2513-2021-2/soundify-front/pull/8)| [Formik](https://formik.org/), [Yup](https://github.com/jquense/yup)|
 | 27 | Testing en React |  [Video](https://drive.google.com/file/d/1lMr9yo97sfqs-GeUxNEpZs_P_4TLGTv5/view?usp=sharing) | [PR de ejemplo](https://github.com/IIC2513-2021-2/soundify-front/pull/9)| [React Testing Library](https://create-react-app.dev/docs/running-tests/#react-testing-library), [msw](https://mswjs.io/docs/), [Más Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [MemoryRouter](https://v5.reactrouter.com/web/api/MemoryRouter) |
+|28.1| Upload de Archivos (back)| [Video](https://drive.google.com/file/d/1-EZ5g2_2ITMXnn1xrDJQjwAOIlY4KODw/view?usp=sharing) | [PR de ejemplo](https://github.com/IIC2513-2021-2/soundify/pull/25)| |         
 
 
 
